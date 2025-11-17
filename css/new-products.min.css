@@ -1,0 +1,1 @@
+.new-products{margin-bottom:150px}.new-products__slider.swiper{overflow:visible}@media (max-width:61.99875em){.new-products__wrapper:not(:last-child){margin-bottom:16px}}@media (max-width:47.99875em){.new-products{margin-bottom:64px}}@media (min-width:61.99875em){.new-products__wrapper{display:grid;gap:8px;grid-template-columns:repeat(auto-fill,minmax(290px,1fr))}}

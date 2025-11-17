@@ -1,0 +1,1 @@
+const filtersBlock=document.querySelectorAll("[data-filters-block]");filtersBlock.length&&filtersBlock.forEach(l=>{l.querySelectorAll(".filters-block__item").forEach(e=>{const t=e.querySelector(".filters-block__toggle");e.classList.contains("is-open")&&t.classList.add("is-active"),t.addEventListener("click",()=>{e.classList.toggle("is-open"),t.classList.toggle("is-active")})})});

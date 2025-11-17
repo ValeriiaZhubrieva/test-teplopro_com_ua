@@ -1,0 +1,115 @@
+.pagination {
+  margin-top: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.pagination__arrow {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--brand-color);
+  border: 2px solid var(--brand-color-hover);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  transition: background 0.3s, color 0.3s, border 0.3s;
+}
+.pagination__arrow[disabled] {
+  background-color: var(--brand-light);
+  border-color: var(--brand-light-hover);
+  color: var(--brand-text-hover);
+}
+.pagination__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.pagination__link, .pagination__dotts {
+  border: 1px solid var(--color-grey-40);
+  background-color: var(--white);
+  border-radius: 6px;
+  padding: 4px;
+  min-width: 43px;
+  min-height: 43px;
+  display: grid;
+  place-content: center;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: var(--black-40);
+}
+.pagination__link {
+  transition: border 0.3s, color 0.3s, background 0.3s;
+}
+.pagination__link.is-active {
+  pointer-events: none;
+  border-color: var(--brand-light-hover-stroke);
+  background-color: var(--brand-light-hover-stroke);
+  color: var(--brand-color-hover);
+}
+@media (max-width: 61.99875em) {
+  .pagination {
+    gap: 12px;
+  }
+  .pagination__list {
+    gap: 8px;
+  }
+}
+@media (max-width: 47.99875em) {
+  .pagination {
+    margin-top: 24px;
+  }
+}
+@media (max-width: 40.62375em) {
+  .pagination__dotts {
+    border: none;
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+    min-width: 0;
+    min-height: 43px;
+  }
+}
+@media (max-width: 29.99875em) {
+  .pagination__item:nth-child(4), .pagination__item:nth-child(5) {
+    display: none;
+  }
+}
+@media (max-width: 24.99875em) {
+  .pagination {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 23.12375em) {
+  .pagination__list {
+    gap: 4px;
+  }
+  .pagination__link, .pagination__dotts {
+    font-size: 14px;
+  }
+  .pagination__link {
+    min-width: 38px;
+    min-height: 38px;
+  }
+}
+@media (any-hover: hover) {
+  .pagination__arrow:hover {
+    background-color: var(--brand-color-hover);
+  }
+  .pagination__arrow[disabled]:hover {
+    background-color: var(--brand-light);
+    border-color: var(--brand-light-hover);
+    color: var(--brand-text-hover);
+  }
+  .pagination__link:hover {
+    border-color: var(--brand-color-hover);
+    background-color: var(--brand-light);
+    color: var(--brand-color-hover);
+  }
+}
