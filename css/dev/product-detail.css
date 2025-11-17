@@ -1,42 +1,4 @@
-.quantity {
-  border: 1px solid var(--brand-light-hover-stroke);
-  border-radius: 8px;
-  padding: 8px;
-  width: 134px;
-  height: 48px;
-  display: flex;
-  gap: 2px;
-}
-.quantity__button {
-  flex: 0 0 30px;
-  display: grid;
-  place-content: center;
-  border-radius: 6px;
-  border: 1px solid var(--brand-light);
-  background-color: var(--brand-light);
-  color: var(--brand-color-60);
-  position: relative;
-  transition: border 0.3s, background 0.3s, color 0.3s;
-}
-.quantity__button > * {
-  pointer-events: none;
-}
-.quantity__button.disabled {
-  pointer-events: none;
-  background-color: var(--white);
-  fill: var(--black-40);
-}
-.quantity__input {
-  flex: 1 1 auto;
-}
-.quantity__input input {
-  width: 100%;
-  height: 100%;
-  font-weight: 500;
-  font-size: 16px;
-  text-align: center;
-  color: var(--black-100);
-}.product-detail {
+.product-detail {
   margin-bottom: 150px;
 }
 .product-detail__title {
@@ -434,6 +396,16 @@
   justify-content: center;
   gap: 5px;
   transition: background 0.3s, color 0.3s;
+}
+.buys-block__not-stock {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.buys-block__not-stock .buys-block__btn[disabled] {
+  background-color: var(--color-grey-98);
+  color: var(--white);
 }
 
 .contacts-block {
@@ -933,6 +905,10 @@
     max-height: 100%;
     object-fit: cover;
   }
+  .buys-block__not-stock {
+    width: 100%;
+    justify-content: space-between;
+  }
   .product-descr {
     flex-direction: column;
     gap: 36px;
@@ -1326,6 +1302,9 @@
     max-width: 100%;
     width: 100%;
   }
+  .buys-block__btn {
+    max-width: 100%;
+  }
   .product-descr__descr {
     font-size: 14px;
   }
@@ -1446,11 +1425,6 @@
   }
 }
 @media (any-hover: hover) {
-  .quantity__button:hover {
-    background-color: var(--brand-color);
-    border-color: var(--brand-color);
-    color: var(--white);
-  }
   .product-detail__thumbs .product-detail__slide:hover {
     border-color: var(--brand-color);
   }
@@ -1464,6 +1438,9 @@
     border-color: var(--brand-color);
     color: var(--black-100);
   }
+  .options-select__option.is-active:hover {
+    color: var(--white);
+  }
   .buys-block__opt:hover {
     color: var(--brand-color-hover);
     text-decoration: none;
@@ -1471,6 +1448,9 @@
   .buys-block__compare:hover {
     background-color: var(--brand-light-hover);
     color: var(--brand-color);
+  }
+  .buys-block__not-stock .buys-block__btn[disabled]:hover {
+    background-color: var(--color-grey-98);
   }
   .contacts-block__phone:hover {
     color: var(--brand-color-hover);
