@@ -22,6 +22,7 @@
   flex: 1 1 auto;
   width: 100%;
   display: flex;
+  align-items: start;
   padding-top: 16px;
   max-height: 100%;
   transform: translate(0, -50px);
@@ -38,6 +39,7 @@
   padding: 24px 20px 24px 24px;
   display: flex;
   flex-direction: column;
+  max-height: 100%;
   pointer-events: all;
 }
 .menu-catalog__list {
@@ -350,6 +352,7 @@
     pointer-events: all;
   }
   .menu-catalog__inner {
+    align-items: stretch;
     pointer-events: all;
     padding-top: 0;
     transform: none;
