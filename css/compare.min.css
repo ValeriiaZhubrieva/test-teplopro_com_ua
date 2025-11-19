@@ -1,0 +1,1 @@
+.compare{margin-bottom:150px}.compare__title{margin-bottom:36px}.compare__items{display:grid;gap:8px;grid-template-columns:repeat(auto-fill,minmax(290px,1fr))}@media (max-width:47.99875em){.compare{margin-bottom:64px}}@media (max-width:40.62375em){.compare__items{gap:0;grid-template-columns:repeat(2,1fr)}}

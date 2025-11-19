@@ -29,6 +29,13 @@
   width: 100%;
   object-fit: cover;
 }
+.infoblock__code {
+  font-weight: 500;
+}
+.infoblock__code {
+  line-height: 120%;
+  color: var(--brand-color);
+}
 .infoblock__text {
   font-weight: 500;
   font-size: 16px;
@@ -47,11 +54,26 @@
     margin-bottom: 16px;
   }
 }
+@media (width <= 29.99875em) {
+  .infoblock__code {
+    font-size: 32px;
+  }
+}
 @media (max-width: 29.99875em) {
   .infoblock__icon {
     max-width: 70px;
   }
   .infoblock__text {
     font-size: 14px;
+  }
+}
+@media (width > 29.99875em) and (width <= 90.75em) {
+  .infoblock__code {
+    font-size: clamp( 32px , 20.1488858254px  +  2.4690849983vw , 56px );
+  }
+}
+@media (width > 90.75em) {
+  .infoblock__code {
+    font-size: 56px;
   }
 }
