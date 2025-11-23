@@ -1,4 +1,4 @@
-function miniSelect() {
+window.customMiniSelect = function() {
   const selParents = document.querySelectorAll("[data-sel-block]");
   if (selParents.length) {
     selParents.forEach((selBlock) => {
@@ -74,8 +74,8 @@ function miniSelect() {
       });
     });
   }
-}
-miniSelect();
+};
+customMiniSelect();
 const topPositionBlocks = document.querySelectorAll("[data-top-position]");
 if (topPositionBlocks.length) {
   let updateTopPositions = function() {

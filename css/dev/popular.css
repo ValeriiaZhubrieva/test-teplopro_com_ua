@@ -20,4 +20,10 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 0;
   }
+  .popular__items > *:nth-child(even) {
+    margin-left: -1px;
+  }
+  .popular__items > *:not(:first-child, :nth-child(2)) {
+    margin-top: -1px;
+  }
 }

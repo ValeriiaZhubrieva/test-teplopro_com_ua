@@ -19,4 +19,10 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 0;
   }
+  .compare__items > *:nth-child(even) {
+    margin-left: -1px;
+  }
+  .compare__items > *:not(:first-child, :nth-child(2)) {
+    margin-top: -1px;
+  }
 }

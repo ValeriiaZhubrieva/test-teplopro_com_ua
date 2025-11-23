@@ -804,6 +804,12 @@
   .catalog__items:not(:last-child) {
     margin-bottom: 16px;
   }
+  .catalog__items > *:nth-child(even) {
+    margin-left: -1px;
+  }
+  .catalog__items > *:not(:first-child, :nth-child(2)) {
+    margin-top: -1px;
+  }
   .catalog__more {
     max-width: 100%;
     width: 100%;

@@ -18,6 +18,8 @@
   width: 100%;
   min-width: 0;
   position: relative;
+  position: sticky;
+  top: calc(var(--header-height) + 8px);
 }
 .product-detail__badges {
   position: absolute;
@@ -383,6 +385,10 @@
   flex-wrap: wrap;
   gap: 12px;
 }
+.buys-block__buy.is-active {
+  background-color: var(--grey-50);
+  color: var(--black-20);
+}
 .buys-block__credit {
   border: none;
 }
@@ -396,6 +402,10 @@
   justify-content: center;
   gap: 5px;
   transition: background 0.3s, color 0.3s;
+}
+.buys-block__compare.is-active {
+  background-color: var(--brand-light-hover);
+  color: var(--brand-color);
 }
 .buys-block__not-stock {
   display: flex;
@@ -949,6 +959,8 @@
     gap: 36px;
   }
   .product-detail__images {
+    position: static;
+    top: 0;
     max-width: none;
   }
   .product-detail__thumbs .product-detail__slide {

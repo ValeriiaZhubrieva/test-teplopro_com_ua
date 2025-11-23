@@ -1,4 +1,4 @@
-import { b as bodyUnlock, g as gotoBlock, c as getHash } from "./common.min.js";
+import { a as bodyUnlock, g as gotoBlock, f as getHash } from "./common.min.js";
 function pageNavigation() {
   document.addEventListener("click", pageNavigationAction);
   document.addEventListener("watcherCallback", pageNavigationAction);

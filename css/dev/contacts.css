@@ -110,9 +110,11 @@
     padding: 24px 16px;
   }
   .contacts__item {
+    font-size: 14px;
     padding: 0 8px;
   }
   .contacts a.contacts__item {
+    font-size: 14px;
     padding: 8px;
   }
 }

@@ -1,5 +1,5 @@
 import { i as isMobile } from "./common.min.js";
-function enableFocusTrap(menu, { openClass = "is-open" } = {}) {
+window.enableFocusTrap = function(menu, { openClass = "is-open" } = {}) {
   const focusableSelector = 'a[href], button:not([disabled]), textarea, input:not([disabled]), select, [tabindex]:not([tabindex="-1"])';
   const guardStart = document.createElement("span");
   const guardEnd = document.createElement("span");
@@ -52,8 +52,8 @@ function enableFocusTrap(menu, { openClass = "is-open" } = {}) {
     guardStart.remove();
     guardEnd.remove();
   };
-}
-function initMenu() {
+};
+window.initMenu = function() {
   const activeClass = "is-open";
   const activeBtnClass = "is-active";
   const html = document.documentElement;
@@ -178,9 +178,9 @@ function initMenu() {
       });
     });
   }
-}
-document.addEventListener("DOMContentLoaded", initMenu);
-function initSubmenu() {
+};
+document.addEventListener("DOMContentLoaded", window.initMenu);
+window.initSubmenu = function() {
   const submenuActiveClass = "is-open";
   const submenuBtnActiveClass = "is-active";
   const html = document.documentElement;
@@ -305,8 +305,8 @@ function initSubmenu() {
       });
     });
   }
-}
-document.addEventListener("DOMContentLoaded", initSubmenu);
+};
+document.addEventListener("DOMContentLoaded", window.initSubmenu);
 function headerScroll() {
   const header = document.querySelector("[data-fls-header-scroll]");
   const headerShow = header.hasAttribute("data-fls-header-scroll-show");

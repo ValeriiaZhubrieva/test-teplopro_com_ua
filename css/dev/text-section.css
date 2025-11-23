@@ -68,6 +68,11 @@
   flex-direction: column;
   gap: 4px;
 }
+.descr-block tbody {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
 .descr-block__row {
   display: flex;
   align-items: center;

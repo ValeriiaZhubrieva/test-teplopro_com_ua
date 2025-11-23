@@ -40,6 +40,11 @@
     gap: 4px;
   }
 }
+@media (max-width: 29.99875em) {
+  .tagsblock__tag {
+    font-size: 16px;
+  }
+}
 @media (any-hover: hover) {
   .tagsblock__tag:hover {
     border-color: var(--brand-light);
