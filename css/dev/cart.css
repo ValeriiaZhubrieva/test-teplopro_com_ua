@@ -67,6 +67,7 @@
   width: 32px;
   height: 32px;
   color: var(--brand-color);
+  transition: color 0.3s;
 }
 .cart-block__body {
   display: flex;
@@ -244,6 +245,9 @@
   }
 }
 @media (any-hover: hover) {
+  .cart-block__close:hover {
+    color: var(--black-100);
+  }
   .cart-block__link:hover {
     color: var(--brand-color-hover);
     text-decoration: underline;
